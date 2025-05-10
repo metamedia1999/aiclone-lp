@@ -1,0 +1,19 @@
+<!-- アイクロのロゴSVG -->
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C2FF" />
+      <stop offset="50%" stop-color="#B76FFF" />
+      <stop offset="100%" stop-color="#FF61F6" />
+    </linearGradient>
+  </defs>
+  <path d="M40 10H25C21.6863 10 19 12.6863 19 16V44C19 47.3137 21.6863 50 25 50H40C43.3137 50 46 47.3137 46 44V16C46 12.6863 43.3137 10 40 10Z" fill="url(#logoGradient)"/>
+  <path d="M32.5 22C36.0899 22 39 24.9101 39 28.5C39 32.0899 36.0899 35 32.5 35C28.9101 35 26 32.0899 26 28.5C26 24.9101 28.9101 22 32.5 22Z" fill="white"/>
+  <path d="M32.5 25C34.433 25 36 26.567 36 28.5C36 30.433 34.433 32 32.5 32C30.567 32 29 30.433 29 28.5C29 26.567 30.567 25 32.5 25Z" fill="url(#logoGradient)"/>
+  <path d="M61 20H55V40H61V20Z" fill="url(#logoGradient)"/>
+  <path d="M70 20H64V40H70V20Z" fill="url(#logoGradient)"/>
+  <path d="M89 20H73V26H77V40H83V26H89V20Z" fill="url(#logoGradient)"/>
+  <path d="M105 20H91V40H97V34H105C108.314 34 111 31.3137 111 28V26C111 22.6863 108.314 20 105 20ZM105 28H97V26H105V28Z" fill="url(#logoGradient)"/>
+  <path d="M127 20H113V40H119V34H123L127 40H133L128 33C130.761 32.1 133 29.3 133 26C133 22.6863 130.314 20 127 20ZM127 28H119V26H127V28Z" fill="url(#logoGradient)"/>
+  <path d="M149 34H139V32H149V26H139V26H135V40H149V34Z" fill="url(#logoGradient)"/>
+</svg>

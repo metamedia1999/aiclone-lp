@@ -1,0 +1,29 @@
+{
+  "name": "アイクロ | あの人が、あなた専用のAIに",
+  "short_name": "アイクロ",
+  "description": "話題のAIクローンSNSマーケットプレイス「アイクロ」。著名人・アイドル・キャラクターと会話。AIチューバーになって収益化も。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF61F6",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "ja",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "categories": ["social", "entertainment"]
+}
