@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-
+import Image from "next/image";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -9,9 +9,13 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col items-center text-center">
           <Link href="/" className="flex items-center gap-2 mt-4 mb-6">
-            <span className="text-2xl font-bold bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink text-transparent bg-clip-text">
-              アイクロ
-            </span>
+      <Image
+  src="/images/logo.svg"
+  alt="アイクロ"
+  width={120}
+  height={32}
+  priority
+/>
           </Link>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-6">
