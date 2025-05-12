@@ -40,7 +40,7 @@ const RegisterSection = () => {
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          animate={{ opacity: 1, y: 0 }} // ← 常に表示されるように修正
           transition={{ duration: 0.7 }}
           className="max-w-4xl mx-auto"
         >
@@ -96,9 +96,9 @@ const RegisterSection = () => {
                 </div>
 
                 <div className="mt-8 grid grid-cols-3 gap-4 max-w-sm mx-auto">
-                  {['優先アクセス', '特別プレゼント', '限定イベント'].map((benefit, i) => (
+                  {["優先アクセス", "特別プレゼント", "限定イベント"].map((benefit, i) => (
                     <div key={i} className="bg-gray-50 rounded-lg p-2 shadow-sm">
-                      <div className="text-xs font-bold text-neon-pink">特典 {i+1}</div>
+                      <div className="text-xs font-bold text-neon-pink">特典 {i + 1}</div>
                       <div className="text-sm font-medium">{benefit}</div>
                     </div>
                   ))}
