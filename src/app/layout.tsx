@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Inter } from "next/font/google";
+import Script from "next/script"; //
 import "./globals.css";
 import ClientBody from "./ClientBody";
 
@@ -35,6 +36,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${notoSansJP.variable} ${inter.variable}`}>
+      <head>
+        {/* ✅ Google Analytics（GA4）スクリプト */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FRVN29KFZZ"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FRVN29KFZZ');
+          `}
+        </Script>
+      </head>
       <body className="antialiased font-sans bg-white">
         <ClientBody>{children}</ClientBody>
       </body>
