@@ -15,16 +15,10 @@ const Footer = () => {
           </Link>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-6">
-            <Link href="#" className="hover:text-primary transition-colors">
-              利用規約
-            </Link>
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">
               プライバシーポリシー
             </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
-              運営会社
-            </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href="mailto:info@metamoment.co.jp" className="hover:text-primary transition-colors">
               お問い合わせ
             </Link>
           </div>
