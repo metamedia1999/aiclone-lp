@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,9 +39,14 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink text-transparent bg-clip-text">
-            アイクロ
-          </span>
+<Image
+  src="/images/logo.svg"
+  alt="アイクロ"
+  width={120}
+  height={32}
+  priority
+/>
+
         </Link>
 
         {/* デスクトップナビゲーション */}
@@ -78,9 +84,12 @@ const Header = () => {
           <SheetContent side="right" className="w-full sm:w-80">
             <div className="flex flex-col gap-8 h-full">
               <div className="flex justify-between items-center">
-                <span className="text-xl font-bold bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink text-transparent bg-clip-text">
-                  アイクロ
-                </span>
+<Image
+  src="/images/logo.svg"
+  alt="アイクロ"
+  width={100}
+  height={28}
+/>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon">
                     <X className="h-5 w-5" />
