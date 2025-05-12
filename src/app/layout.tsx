@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Inter } from "next/font/google";
-import Script from "next/script"; //
+import Script from "next/script";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 
@@ -8,13 +8,13 @@ const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  display: 'swap', // Improve performance with font display swap
+  display: 'swap',
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: 'swap', // Improve performance with font display swap
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -37,14 +37,15 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${notoSansJP.variable} ${inter.variable}`}>
       <head>
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PSN4B5R9');</script>
-<!-- End Google Tag Manager -->
-        {/* ✅ Google Analytics（GA4）スクリプト */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PSN4B5R9');
+          `}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FRVN29KFZZ"
           strategy="afterInteractive"
@@ -59,10 +60,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
       </head>
       <body className="antialiased font-sans bg-white">
-        <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSN4B5R9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PSN4B5R9"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <ClientBody>{children}</ClientBody>
       </body>
     </html>
