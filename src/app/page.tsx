@@ -1,35 +1,33 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import FloatingLineButton from "@/components/layout/FloatingLineButton";
-import HeroSection from "@/components/sections/HeroSection";
-import AboutSection from "@/components/sections/AboutSection";
-import UsageScene from "@/components/sections/UsageScene";
-import Features from "@/components/sections/Features";
-import RegisterSection from "@/components/sections/RegisterSection";
-import ScreenshotSection from "@/components/sections/ScreenshotSection";
-import SnsUsageSection from "@/components/sections/SnsUsageSection";
-import BusinessSection from "@/components/sections/BusinessSection";
-import ProcessSection from "@/components/sections/ProcessSection";
-import FlowSection from "@/components/sections/FlowSection";
+// src/app/privacy-policy/page.tsx
 
-export default function Home() {
+export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen">
-      <Header />
-      <FloatingLineButton />
-
-      <HeroSection />
-      <AboutSection />
-      <UsageScene />
-      <BusinessSection />
-      <Features />
-      <ProcessSection />
-      <ScreenshotSection />
-      <FlowSection />
-      <SnsUsageSection />
-      <RegisterSection />
-
-      <Footer />
+    <main className="max-w-3xl mx-auto px-4 py-16">
+      <h1 className="text-3xl font-bold mb-6">プライバシーポリシー</h1>
+      <p className="mb-4">
+        本プライバシーポリシーは、当サイト（以下「当サイト」）が提供するサービスにおける、ユーザーの個人情報の取扱いについて定めるものです。
+      </p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">1. 収集する情報</h2>
+      <p className="mb-4">
+        当サイトでは、LINE公式アカウント登録時にLINEアカウントに関する情報を取得する場合があります。
+      </p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">2. 利用目的</h2>
+      <p className="mb-4">
+        取得した情報は、サービスに関する案内、アンケートのご協力依頼、改善のために利用します。
+      </p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">3. 第三者提供</h2>
+      <p className="mb-4">
+        ご本人の同意がある場合または法令に基づく場合を除き、第三者に提供することはありません。
+      </p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">4. お問い合わせ</h2>
+      <p className="mb-4">
+        プライバシーに関するお問い合わせは、下記メールアドレスまでご連絡ください。<br />
+        info@example.com
+      </p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">5. 改定</h2>
+      <p>
+        本ポリシーの内容は予告なく変更することがあります。
+      </p>
     </main>
   );
 }
