@@ -65,7 +65,11 @@ const RegisterSection = () => {
                     size="lg"
                     asChild
                   >
-                    <Link href="#register">
+              <a
+      href="https://lin.ee/X5yLRF0"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
                       <Image
                         src="/images/line-icon.svg"
                         width={32}
@@ -74,7 +78,7 @@ const RegisterSection = () => {
                         className="w-8 h-8"
                       />
                       <span>今すぐLINEで登録する</span>
-                    </Link>
+              </a>
                   </Button>
 
                   <div className="flex-shrink-0 w-32 h-32 relative mx-auto md:mx-0">
